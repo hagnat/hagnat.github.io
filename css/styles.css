@@ -1,0 +1,155 @@
+HTML {
+    background-color: #FCFCFC;
+}
+BODY {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
+    width: 48em;
+    margin: 0;
+    margin-left: 24em;
+    padding: 0 3em;
+    background-color: white;
+    position: relative;
+    -webkit-box-shadow: 1em 0 10em 2em rgba(220,220,220,1);
+    -moz-box-shadow: 1em 0 10em 2em rgba(220,220,220,1);
+    box-shadow: 1em 0 10em 2em rgba(220,220,220,1);
+}
+H1, H2, H3 {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * header
+ */
+
+HEADER {
+    padding: 3em 0;
+}
+HEADER H1 {
+    font-size: 2.5em;
+    color: #555;
+}
+HEADER H2 {
+    font-size: 1.5em;
+    color: #AAA;
+}
+
+FOOTER {
+    padding: 1em;
+    text-align: right;
+}
+
+/**
+ * aside
+ */
+
+ASIDE {
+    position: absolute;
+    left: -22em;
+    width: 20em;
+}
+ASIDE IMG {
+    width: 100%;
+}
+
+/**
+ * article
+ */
+
+ARTICLE {
+    margin-bottom: 4em;
+}
+ARTICLE H1 {
+    font-size: 2.5em;
+}
+ARTICLE A {
+    text-decoration: none;
+}
+ARTICLE A:hover {
+    text-decoration: underline;
+}
+ARTICLE UL {
+    list-style: none;
+    padding: 0;
+    padding-left: 3em;
+}
+ARTICLE UL LI {
+    line-height: 1.2em;
+    margin-bottom: 0.75em;
+}
+
+/**
+ * about
+ */
+ARTICLE.about {
+    color: rgba(80,0,0,1);
+}
+ARTICLE.about A,
+ARTICLE.about H1 {
+    color: rgba(160,80,0,1);
+}
+
+/**
+ * academical
+ */
+ARTICLE.academical {
+    color: rgba(80,80,0,1);
+}
+ARTICLE.academical A,
+ARTICLE.academical H1 {
+    color: rgba(160,160,0,1);
+}
+
+/**
+ * professional
+ */
+ARTICLE.professional {
+    color: rgba(0,80,0,1);
+}
+ARTICLE.professional A,
+ARTICLE.professional H1 {
+    color: rgba(0,160,0,1);
+}
+ARTICLE.professional UL {
+    padding-left: 0;
+}
+ARTICLE.professional .help {
+    font-size: 0.8em;
+}
+ARTICLE.professional .help,
+ARTICLE.professional UL LI {
+    margin-left: 100px;
+}
+ARTICLE.professional UL LI {
+    margin-bottom: 36px;
+    position: relative;
+}
+ARTICLE.professional UL P {
+    margin-top: 0.5em;
+    color: rgba(0,80,0,0.5);
+}
+ARTICLE.professional H2,
+ARTICLE.professional H3 {
+    font-size: 1.1em;
+    font-weight: normal;
+}
+ARTICLE.professional .period {
+    position: absolute;
+    left: -100px;
+    top: 0;
+    text-align: right;
+    width: 80px;
+    font-size: 0.8em;
+    color: rgba(0,80,0,0.5);
+}
+ARTICLE.professional UL LI.secondary {
+    font-size: 0.8em;
+}
+ARTICLE.professional .help,
+ARTICLE.professional UL LI.secondary,
+ARTICLE.professional .keywords {
+    color: rgba(0,80,0,0.33);
+}
+
+
