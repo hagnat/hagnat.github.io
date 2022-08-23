@@ -4,15 +4,11 @@ HTML {
 BODY {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 14px;
-    width: 48em;
     margin: 0;
     margin-left: 24em;
-    padding: 0 3em;
+    padding: 3em;
     background-color: white;
     position: relative;
-    -webkit-box-shadow: 1em 0 10em 2em rgba(220,220,220,1);
-    -moz-box-shadow: 1em 0 10em 2em rgba(220,220,220,1);
-    box-shadow: 1em 0 10em 2em rgba(220,220,220,1);
 }
 H1, H2, H3 {
     margin: 0;
@@ -24,34 +20,61 @@ H1, H2, H3 {
  */
 
 HEADER {
-    padding: 3em 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(240, 240, 240, 1);
+    left: -24em;
+    width: 24em;
+    text-align: center;
+    padding-top: 2em;
+}
+HEADER .vignette {
+    border-radius: 20%;
+    display: inline-block;
+    position: relative;
+}
+HEADER .vignette IMG {
+    width: 20em;
+    border-radius: 20%;
+    display: block;
+    border: 1px solid #fff;
+}
+HEADER .vignette:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: inset 1em 2em 1em 0 rgba(240, 240, 240, 0.75),
+                inset -1em -2em 1em 0 rgba(240, 240, 240, 0.75),
+                inset 2em -1em 1em 0 rgba(240, 240, 240, 0.75),
+                inset -2em 1em 1em 0 rgba(240, 240, 240, 0.75);
 }
 HEADER H1 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #555;
+    line-height: 1.5em;
+    margin-top: 1em;
 }
 HEADER H2 {
     font-size: 1.5em;
     color: #AAA;
 }
 
+/**
+ * footer
+ */
+
 FOOTER {
     padding: 1em;
     text-align: right;
+    color: rgba(0, 0, 0, 0.2);
 }
 
-/**
- * aside
- */
-
-ASIDE {
-    position: absolute;
-    left: -22em;
-    width: 20em;
-}
-ASIDE IMG {
-    width: 100%;
-}
 
 /**
  * article
@@ -72,7 +95,10 @@ ARTICLE A:hover {
 ARTICLE UL {
     list-style: none;
     padding: 0;
-    padding-left: 3em;
+}
+ARTICLE H1,
+ARTICLE UL {
+    margin-left: 50px;
 }
 ARTICLE UL LI {
     line-height: 1.2em;
@@ -82,74 +108,77 @@ ARTICLE UL LI {
 /**
  * about
  */
-ARTICLE.about {
+#about {
     color: rgba(80,0,0,1);
 }
-ARTICLE.about A,
-ARTICLE.about H1 {
+#about A,
+#about H1 {
     color: rgba(160,80,0,1);
 }
 
 /**
  * academical
  */
-ARTICLE.academical {
+#academical {
     color: rgba(80,80,0,1);
 }
-ARTICLE.academical A,
-ARTICLE.academical H1 {
+#academical A,
+#academical H1 {
     color: rgba(160,160,0,1);
 }
 
 /**
  * professional
  */
-ARTICLE.professional {
-    color: rgba(0,80,0,1);
+#professional {
+    color: rgba(0, 80, 0, 1);
 }
-ARTICLE.professional A,
-ARTICLE.professional H1 {
-    color: rgba(0,160,0,1);
+#professional A,
+#professional H1 {
+    color: rgba(0, 160, 0, 1);
 }
-ARTICLE.professional UL {
+#professional UL {
     padding-left: 0;
 }
-ARTICLE.professional .help {
+#professional .help {
     font-size: 0.8em;
 }
-ARTICLE.professional .help,
-ARTICLE.professional UL LI {
-    margin-left: 100px;
+#professional .help,
+#professional UL LI {
 }
-ARTICLE.professional UL LI {
+#professional UL LI {
     margin-bottom: 36px;
     position: relative;
 }
-ARTICLE.professional UL P {
+#professional UL P {
     margin-top: 0.5em;
-    color: rgba(0,80,0,0.5);
+    color: rgba(0, 80, 0, 0.5);
 }
-ARTICLE.professional H2,
-ARTICLE.professional H3 {
+#professional H2,
+#professional H3 {
     font-size: 1.1em;
     font-weight: normal;
 }
-ARTICLE.professional .period {
+#professional H2 A {
+    color: inherit;
+}
+#professional .period {
     position: absolute;
-    left: -100px;
+    display:  block;
+    margin-left: -120px;
+    width: 100px;
     top: 0;
     text-align: right;
-    width: 80px;
     font-size: 0.8em;
-    color: rgba(0,80,0,0.5);
+    color: rgba(0, 80, 0, 0.5);
 }
-ARTICLE.professional UL LI.secondary {
+#professional UL LI.secondary {
     font-size: 0.8em;
 }
-ARTICLE.professional .help,
-ARTICLE.professional UL LI.secondary,
-ARTICLE.professional .keywords {
-    color: rgba(0,80,0,0.33);
+#professional .help,
+#professional UL LI.secondary,
+#professional .keywords {
+    color: rgba(0, 80, 0, 0.33);
 }
 
 
