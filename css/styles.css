@@ -1,6 +1,7 @@
 HTML {
     background-color: #FCFCFC;
 }
+
 BODY {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 14px;
@@ -14,6 +15,7 @@ BODY {
     -moz-box-shadow: 1em 0 10em 2em rgba(220,220,220,1);
     box-shadow: 1em 0 10em 2em rgba(220,220,220,1);
 }
+
 H1, H2, H3 {
     margin: 0;
     padding: 0;
@@ -34,6 +36,31 @@ HEADER H2 {
     font-size: 1.5em;
     color: #AAA;
 }
+HEADER NAV {
+    position: absolute;
+    top: 4em;
+    right: 3em;
+}
+HEADER NAV UL {
+    display: inline;
+    list-style: none;
+}
+HEADER NAV LI {
+    display: inline-block;
+    margin-left: 6px;
+}
+HEADER NAV A {
+    text-decoration: none;
+    color: #000;
+}
+HEADER NAV A:hover {
+    text-decoration: none;
+    color: #777;
+}
+
+/**
+ * footer
+ */
 
 FOOTER {
     padding: 1em;
